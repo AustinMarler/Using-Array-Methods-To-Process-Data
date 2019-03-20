@@ -46,9 +46,9 @@ finalArrayQ4 = items.filter(function(item) {
     return item.materials.includes('wood');
 }).map(function(item) {
     return item.title;
-}).join(' is made of wood\n\n');
+}).join(' is made of wood.\n\n');
 
-document.querySelector('#answer4').innerHTML = finalArrayQ4;
+document.querySelector('#answer4').innerHTML = `${finalArrayQ4} is made of wood.`;
 
 
 /* Which items are made of eight or more materials? Display the name, number of items and the items it is made of.
